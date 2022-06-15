@@ -4,12 +4,14 @@ import "./App.css";
 import HomePage from "./pages/HomePage";
 import { FileConversionPage } from "./pages/FileConversionPage";
 import { UserFilesPage } from "./pages/UserFilesPage";
+import { Navigation } from "./components/Navigation/Navigation";
 
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
 function App() {
   return (
     <BrowserRouter>
+      <Navigation></Navigation>
       <Routes>
         <Route path="/" element={<HomePage></HomePage>}></Route>
         <Route
